@@ -1,0 +1,9 @@
+c:\users\jkuhn\documents\visual studio 2012\Projects\TheGreatReducer\TheGreatReducer\bin\Debug\TheGreatReducer.exe
+c:\users\jkuhn\documents\visual studio 2012\Projects\TheGreatReducer\TheGreatReducer\bin\Debug\TheGreatReducer.pdb
+c:\users\jkuhn\documents\visual studio 2012\Projects\TheGreatReducer\TheGreatReducer\obj\Debug\TheGreatReducer.csprojResolveAssemblyReference.cache
+c:\users\jkuhn\documents\visual studio 2012\Projects\TheGreatReducer\TheGreatReducer\obj\Debug\TheGreatReducer.Form1.resources
+c:\users\jkuhn\documents\visual studio 2012\Projects\TheGreatReducer\TheGreatReducer\obj\Debug\TheGreatReducer.Properties.Resources.resources
+c:\users\jkuhn\documents\visual studio 2012\Projects\TheGreatReducer\TheGreatReducer\obj\Debug\TheGreatReducer.csproj.GenerateResource.Cache
+c:\users\jkuhn\documents\visual studio 2012\Projects\TheGreatReducer\TheGreatReducer\obj\Debug\TheGreatReducer.exe
+c:\users\jkuhn\documents\visual studio 2012\Projects\TheGreatReducer\TheGreatReducer\obj\Debug\TheGreatReducer.pdb
+c:\users\jkuhn\documents\visual studio 2012\Projects\TheGreatReducer\TheGreatReducer\obj\Debug\TheGreatReducer.AreaSelector.resources
