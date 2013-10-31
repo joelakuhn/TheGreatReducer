@@ -42,13 +42,19 @@ namespace TheGreatReducer
         private void button1_Click(object sender, EventArgs e)
         {
             var selector = new AreaSelector();
-            if (shotRect.Height != 0 && shotRect.Width != 0)
-            {
-                selector.Bounds = shotRect;
-            }
             selector.SizeChanged += SelectorOnSizeChanged;
             selector.Move += SelectorOnSizeChanged;
             selector.Closed += SelectorOnClosed;
+            if (shotRect.Height != 0 && shotRect.Width != 0)
+            {
+                selector.Bounds = shotRect;
+                selector.Left = shotRect.Left;
+                selector.Top = shotRect.Top;
+            }
+            else
+            {
+                selector.StartPosition = FormStartPosition.WindowsDefaultLocation;
+            }
             selector.Show();
         }
 
@@ -135,6 +141,26 @@ namespace TheGreatReducer
         private void transparent_btn_Click(object sender, EventArgs e)
         {
             pictureBox1.Visible = !pictureBox1.Visible;
+        }
+
+        private void up_btn_Click(object sender, EventArgs e)
+        {
+            this.Top--;
+        }
+
+        private void right_btn_Click(object sender, EventArgs e)
+        {
+            this.Left++;
+        }
+
+        private void down_btn_Click(object sender, EventArgs e)
+        {
+            this.Top++;
+        }
+
+        private void left_btn_Click(object sender, EventArgs e)
+        {
+            this.Left--;
         }
     }
 }

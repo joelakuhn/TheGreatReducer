@@ -34,6 +34,11 @@
             this.scaleFactor_txt = new System.Windows.Forms.TextBox();
             this.transparent_btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.up_btn = new System.Windows.Forms.Button();
+            this.left_btn = new System.Windows.Forms.Button();
+            this.right_btn = new System.Windows.Forms.Button();
+            this.down_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -59,17 +64,17 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(84, 3);
+            this.button2.Location = new System.Drawing.Point(322, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(28, 23);
             this.button2.TabIndex = 0;
-            this.button2.Text = "quit";
+            this.button2.Text = "X";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // scaleFactor_txt
             // 
-            this.scaleFactor_txt.Location = new System.Drawing.Point(246, 5);
+            this.scaleFactor_txt.Location = new System.Drawing.Point(241, 5);
             this.scaleFactor_txt.Name = "scaleFactor_txt";
             this.scaleFactor_txt.Size = new System.Drawing.Size(32, 20);
             this.scaleFactor_txt.TabIndex = 3;
@@ -77,7 +82,7 @@
             // 
             // transparent_btn
             // 
-            this.transparent_btn.Location = new System.Drawing.Point(165, 3);
+            this.transparent_btn.Location = new System.Drawing.Point(84, 3);
             this.transparent_btn.Name = "transparent_btn";
             this.transparent_btn.Size = new System.Drawing.Size(75, 23);
             this.transparent_btn.TabIndex = 4;
@@ -90,14 +95,64 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel2.Controls.Add(this.down_btn);
+            this.panel2.Controls.Add(this.right_btn);
+            this.panel2.Controls.Add(this.left_btn);
+            this.panel2.Controls.Add(this.up_btn);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.scaleFactor_txt);
             this.panel2.Controls.Add(this.transparent_btn);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(329, 30);
+            this.panel2.Size = new System.Drawing.Size(353, 29);
             this.panel2.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(165, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Scale Factor:";
+            // 
+            // up_btn
+            // 
+            this.up_btn.Location = new System.Drawing.Point(287, 2);
+            this.up_btn.Name = "up_btn";
+            this.up_btn.Size = new System.Drawing.Size(10, 10);
+            this.up_btn.TabIndex = 6;
+            this.up_btn.UseVisualStyleBackColor = true;
+            this.up_btn.Click += new System.EventHandler(this.up_btn_Click);
+            // 
+            // left_btn
+            // 
+            this.left_btn.Location = new System.Drawing.Point(279, 9);
+            this.left_btn.Name = "left_btn";
+            this.left_btn.Size = new System.Drawing.Size(10, 10);
+            this.left_btn.TabIndex = 7;
+            this.left_btn.UseVisualStyleBackColor = true;
+            this.left_btn.Click += new System.EventHandler(this.left_btn_Click);
+            // 
+            // right_btn
+            // 
+            this.right_btn.Location = new System.Drawing.Point(295, 9);
+            this.right_btn.Name = "right_btn";
+            this.right_btn.Size = new System.Drawing.Size(10, 10);
+            this.right_btn.TabIndex = 8;
+            this.right_btn.UseVisualStyleBackColor = true;
+            this.right_btn.Click += new System.EventHandler(this.right_btn_Click);
+            // 
+            // down_btn
+            // 
+            this.down_btn.Location = new System.Drawing.Point(287, 16);
+            this.down_btn.Name = "down_btn";
+            this.down_btn.Size = new System.Drawing.Size(10, 10);
+            this.down_btn.TabIndex = 9;
+            this.down_btn.UseVisualStyleBackColor = true;
+            this.down_btn.Click += new System.EventHandler(this.down_btn_Click);
             // 
             // Form1
             // 
@@ -111,7 +166,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "The Great Reducer";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -128,6 +183,11 @@
         private System.Windows.Forms.TextBox scaleFactor_txt;
         private System.Windows.Forms.Button transparent_btn;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button down_btn;
+        private System.Windows.Forms.Button right_btn;
+        private System.Windows.Forms.Button left_btn;
+        private System.Windows.Forms.Button up_btn;
     }
 }
 
