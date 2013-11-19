@@ -73,6 +73,7 @@ namespace TheGreatReducer
 
         private void UpdatePicture()
         {
+            //if (!pictureBox1.Visible) return;
             if (shotRect.Width > 0 && shotRect.Height > 0)
             {
                 var scaleFactor = float.Parse(scaleFactor_txt.Text);
@@ -130,8 +131,8 @@ namespace TheGreatReducer
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             var eAsMouseArgs = e as MouseEventArgs;
-            var x = (uint)(shotRect.X + (int)(eAsMouseArgs.X * 1.25));
-            var y = (uint)(shotRect.Y + (int)(eAsMouseArgs.Y * 1.25));
+            var x = (uint)(shotRect.X + (int)(eAsMouseArgs.X * float.Parse(scaleFactor_txt.Text)));
+            var y = (uint)(shotRect.Y + (int)(eAsMouseArgs.Y * float.Parse(scaleFactor_txt.Text)));
             var oldCursorPos = Cursor.Position;
             Cursor.Position = new Point((int)x, (int)y);
             DoMouseClick(x, y);
@@ -140,27 +141,40 @@ namespace TheGreatReducer
 
         private void transparent_btn_Click(object sender, EventArgs e)
         {
+            if (!pictureBox1.Visible)
+            {
+                UpdatePicture();
+            }
             pictureBox1.Visible = !pictureBox1.Visible;
         }
 
         private void up_btn_Click(object sender, EventArgs e)
         {
             this.Top--;
+            Cursor.Position = new Point(Cursor.Position.X, Cursor.Position.Y - 1);
         }
 
         private void right_btn_Click(object sender, EventArgs e)
         {
             this.Left++;
+            Cursor.Position = new Point(Cursor.Position.X + 1, Cursor.Position.Y);
         }
 
         private void down_btn_Click(object sender, EventArgs e)
         {
             this.Top++;
+            Cursor.Position = new Point(Cursor.Position.X, Cursor.Position.Y + 1);
         }
 
         private void left_btn_Click(object sender, EventArgs e)
         {
             this.Left--;
+            Cursor.Position = new Point(Cursor.Position.X - 1, Cursor.Position.Y);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

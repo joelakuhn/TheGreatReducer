@@ -1,0 +1,11 @@
+bin/
+obj/
+logs/
+.JustCode/
+.sass-cache/
+*.suo
+*.user
+_ReSharper*/
+*.resharper
+out/
+/Database/patches
